@@ -10,16 +10,33 @@
   <body>
     <section class="promo-video">
       <div id="overlay"></div>
-      <video id="video" autoplay loop>
+      <video id="video" autoplay loop muted>
         <!-- IE and Safari use mp4 -->
-        <source src="assets/video/videobg.mp4" type="video/mp4" />
+        <source src="assets/videos/videobg.mp4" type="video/mp4" />
         <!-- FF, Chrome, and Opera use webm and ogv-->
-        <source src="assets/video/videobg.webm" type="video/webm" />
-        <source src="assets/video/videobg.ogv" type="video/ogv" />
+        <source src="assets/videos/videobg.webm" type="video/webm" />
+        <source src="assets/videos/videobg.ogv" type="video/ogv" />
       </video>
-    </section>
 
-    <h1>something here</h1>
+      <div class="headliner">
+        <div class="column row">
+          <h1 class="text-center">Passion for Excellence</h1>
+        </div>
+      </div><!-- END .headliner -->
+
+      <div class="header-content">
+        <div class="row">
+          <div class="small-8 medium-4 columns">
+            <img src="assets/images/logo.svg" alt="Hotel Spa logo" />
+          </div>
+
+          <div class="small-4 medium-4 columns">
+            <a class="menu-icon float-right" data-open="mainMenu"></a>
+          </div>
+        </div>
+      </div><!-- END .header-content -->
+
+    </section>
     
     <!-- Foundation-specific components below -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
