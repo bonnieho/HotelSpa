@@ -18,6 +18,12 @@
         <source src="assets/videos/videobg.ogv" type="video/ogv" />
       </video>
 
+<!-- to get the column row classes to work together, I had to make some tweaks to the app.scss file to take it back to Foundation v.6.3.something:
+  // Grids (choose one)
+// @include foundation-xy-grid-classes;
+@include foundation-grid;
+@include foundation-flex-grid; -->
+
       <div class="headliner">
         <div class="column row">
           <h1 class="text-center">Passion for Excellence</h1>
@@ -30,7 +36,7 @@
             <img src="assets/images/logo.svg" alt="Hotel Spa logo" />
           </div>
 
-          <div class="small-4 medium-4 columns">
+          <div class="small-4 medium-8 columns">
             <a class="menu-icon float-right" data-open="mainMenu"></a>
           </div>
         </div>
