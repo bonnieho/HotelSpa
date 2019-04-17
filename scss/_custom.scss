@@ -1,3 +1,10 @@
+h2 {
+	color: $primary-color;
+	font-size: rem-calc(42);
+	margin: rem-calc(20 0);
+}
+
+
 .promo-video {
 	position: relative;
 	#overlay {
@@ -49,6 +56,39 @@
 		height: rem-calc(8);
 		box-shadow: 0 28px 0 $white, 0 14px 0 $white;
 	}
+}
+
+
+section.rooms {
+	padding: rem-calc(30 0);
+	a {
+		color:$black;
+	}
+	div.room-image {
+		position: relative;
+		.room-title {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding-left: rem-calc(20);
+
+			h3 {
+				color: $white;
+			}
+		}
+	}
+	div.room-content {
+		background-color: $white;
+		padding: rem-calc(20);
+	}
+}
+
+.button {
+	@include button-style($secondary-color, darken($secondary-color, 10), $white);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: rem-calc(16);
+	margin: rem-calc(20 0);
 }
 
 
