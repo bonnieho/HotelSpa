@@ -118,6 +118,16 @@ section.rooms {
 	}
 }
 
+.bar-image {
+	background-image: url(../assets/images/separators/small/separator02-image.jpg);
+	@include breakpoint(medium) {
+		background-image: url(../assets/images/separators/medium/separator02-image.jpg);
+	}
+	@include breakpoint(large) {
+		background-image: url(../assets/images/separators/large/separator02-image.jpg);
+	}
+}
+
 
 /* +++++++++   About Us Section +++++++++++ */
 
@@ -154,6 +164,10 @@ section.rooms {
 
 h2.white {
 	color: $white;
+}
+
+section.booking {
+	padding: rem-calc(50);
 }
 
 
