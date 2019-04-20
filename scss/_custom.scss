@@ -1,3 +1,8 @@
+.is-reveal-open .off-canvas-wrapper {
+	overflow-x: visible;
+}
+
+
 h2 {
 	color: $primary-color;
 	font-size: rem-calc(42);
@@ -5,7 +10,24 @@ h2 {
 }
 
 
-.promo-video {
+/* +++++++++  Off-canvas  ++++++++++++ */
+
+div.off-canvas {
+	height: 100%;
+
+	a, h3 {
+		color: $white;
+	}
+	.is-drilldown-submenu {
+		background: darken($primary-color, 20);
+	}
+}
+
+
+
+
+
+.promo-video, .promo {
 	position: relative;
 	#overlay {
 		position: absolute; 
@@ -43,20 +65,26 @@ h2 {
 	}
 }
 
-.menu-icon,
-.menu-icon:hover {
+/* from master solution copy */
+.menu-icon {
+	@include hamburger($white, $white, 50px, 36px, 8px, 3);
+	margin-top: rem-calc(20);
+}
+
+//.menu-icon,
+//.menu-icon:hover {
 	/* position: absolute;
 	top: rem-calc(20);
 	right: rem-calc(20); */
-	width: rem-calc(60);
-	height: rem-calc(36);
-	margin-top: rem-calc(25);
-		&::after {
-		background-color: $white;
-		height: rem-calc(8);
-		box-shadow: 0 28px 0 $white, 0 14px 0 $white;
-	}
-}
+//	width: rem-calc(60);
+//	height: rem-calc(36);
+//	margin-top: rem-calc(25);
+//		&::after {
+//		background-color: $white;
+//		height: rem-calc(8);
+//		box-shadow: 0 28px 0 $white, 0 14px 0 $white;
+//	}
+//}
 
 
 section.rooms {
@@ -209,6 +237,14 @@ footer {
 		margin: 0;
 	}
 }
+
+/* Services**/
+section.services .content-text{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
 
 
 
