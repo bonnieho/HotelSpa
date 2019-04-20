@@ -13,7 +13,7 @@ h2 {
 /* +++++++++  Off-canvas  ++++++++++++ */
 
 div.off-canvas {
-	height: 100%;
+	max-height: 100%;
 
 	a, h3 {
 		color: $white;
