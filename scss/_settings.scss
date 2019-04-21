@@ -493,6 +493,13 @@ $meter-fill-bad: $alert-color;
 
 // 25. Off-canvas
 // --------------
+
+$offcanvas-sizes: (
+  small: 250px,
+);
+$offcanvas-vertical-sizes: (
+  small: 250px,
+);
 // $offcanvas-size: 250px;
 $offcanvas-background: darken($primary-color, 20);
 $offcanvas-zindex: -1;
@@ -504,12 +511,7 @@ $maincontent-shadow: 0 0 10px rgba($black, 0.5);
 
 
 
-$offcanvas-sizes: (
-  small: 250px,
-);
-$offcanvas-vertical-sizes: (
-  small: 250px,
-);
+
 
 $offcanvas-background: darken($primary-color, 20);
 

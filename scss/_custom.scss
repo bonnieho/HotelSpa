@@ -17,6 +17,7 @@ div.off-canvas {
 
 	a, h3 {
 		color: $white;
+		background-color: darken($primary-color, 20);
 	}
 	.is-drilldown-submenu {
 		background-color: darken($primary-color, 20);
@@ -123,17 +124,18 @@ section.rooms {
 /*** Separator Image ***/
 
 .separator-image {
+	/* clear: both; */
 	height: 200px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	@include breakpoint(medium) {
 		height: 350px;
-		background-size: cover;
+		background-size: cover; 
 	}
 	@include breakpoint(large) {
 		background-size: cover;
-	}
+	} 
 }
 
 .pool-image {
@@ -159,27 +161,27 @@ section.rooms {
 
 /* +++++++++   About Us Section +++++++++++ */
 
-.about-us-gallery {
+section.about-us-gallery {
 	@include breakpoint(medium) {
-		height: rem-calc(560);
-		position: relative;
+		height:rem-calc(560);
+		position:relative;
 	}
 	@include breakpoint(medium) {
-		height: rem-calc(420);
+		height:rem-calc(420);
 	}
 
 	.empty {
 		@include breakpoint(medium) {
-			height: rem-calc(560);
+			height:rem-calc(560);
 		}
-		@include breakpoint(medium) {
-			height: rem-calc(420);
+		@include breakpoint(large) {
+			height:rem-calc(420);
 		}
 	}
 	div.content-about-us {
 		@include breakpoint(medium) {
 			position: absolute;
-			top: rem-calc(20);
+			top:rem-calc(20);
 			left: 0;
 			width: 100%;
 		}
