@@ -171,9 +171,12 @@ window.jQuery || document.write('<script src="bower_components/jquery/dist/jquer
                 </div>
 
                 <!-- MODALS -->
-                <div class="reveal" id="galleryModal" data-reveal>
-                  <!-- <img src="assets/images/gallery/fullsize/image01.jpg" alt="Hotel Spa image 1" /> -->
+                <div class="reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                  <!-- <img src="" id="imageContainer alt="Hotel Spa image" /> -->
                   <img src="assets/images/gallery/fullsize/image01.jpg" id="imageContainer" />
+                  <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>>
                 </div>
 <!--
         <div class="reveal" id="galleryModal1" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
