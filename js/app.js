@@ -1,4 +1,7 @@
-
+function getHeight() {
+	var height = $('section.promo').height();
+	console.log(height);
+}
 //var $ = {},
  // jQuery = $ = require('../bower_components/jquery/dist/jquery');
 
