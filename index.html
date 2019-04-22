@@ -272,20 +272,34 @@ window.jQuery || document.write('<script src="bower_components/jquery/dist/jquer
           <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
             <h2 class="text-center">Booking Form</h2>
 
-            <form>
+            <form data-abide novalidate>
+
+              <div class="alert callout" style="display:none;" data-abide-error>
+                <p><i class="fi-alert"></i> &#160;There are some problems in your form.</p>
+              </div>
+
               <div class="row columns">
                 <label>Name:
-                  <input type="text" placeholder="Your Name" />
+                  <input type="text" placeholder="Your Name" required />
+                  <span class="form-error">
+                    <i class="fi-alert"></i> The name field is mandatory!
+                  </span>
                 </label>
               </div>
               <div class="row columns">
                 <label>E-Mail:
-                  <input type="email" placeholder="Your E-mail" />
+                  <input type="email" placeholder="Your E-mail" required/>
+                  <span class="form-error">
+                    <i class="fi-alert"></i> The e-mail field is mandatory!
+                  </span>
                 </label>
               </div>
               <div class="row columns">
                 <label>Phone Number:
-                  <input type="tel" placeholder="Your Phone Number" />
+                  <input type="tel" placeholder="Your Phone Number" required />
+                  <span class="form-error">
+                    <i class="fi-alert"></i> The phone field is mandatory!
+                  </span>
                 </label>
               </div>
               <div class="row columns">
