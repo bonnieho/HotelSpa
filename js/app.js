@@ -1,6 +1,6 @@
 function getHeight() {
-	var height = $('section.promo').height();
-	console.log(height);
+	var height = $('section.promo, section.promo-video').height();
+	$('overlay').css({'height':height+'px'})
 }
 //var $ = {},
  // jQuery = $ = require('../bower_components/jquery/dist/jquery');
@@ -20,6 +20,8 @@ window.$ = jQuery */
 
 
 $(function() {
+	getHeight();
+
 	$('gallery a').on('click',function() {
 		var image = $(this).find('img').attr('src');
 		var imageSelected = image.split('thumbnail');
