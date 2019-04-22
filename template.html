@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+    <title>About Us: Hotel&#038;Spa</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+
+<!-- these work with white overlay
+
+    <script src="http://foundation.zurb.com/sites/docs/assets/js/vendor.js?hash=eceb3a0cb6a9a3f95854c532a6ebbd81"></script>
+
+
+    <script src="http://foundation.zurb.com/sites/docs/assets/js/foundation.js?hash=b679e2177e3de7e04f4c100d03af1ad3"></script>
+
+
+    <script src="http://foundation.zurb.com/sites/docs/assets/js/docs.js?hash=9adc0ae1222c4567178bb0cc7f704ec5"></script>
+
+
+-->
+
+<!-- First try loading jQuery from Google's CDN  -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+<!-- Fall back to a local copy of jQuery if the CDN fails -->
+<script>
+window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.js"><\/script>')
+</script> 
+
+
+<script src="https://cdn.jsdelivr.net/combine/npm/foundation-sites@6.3.0/dist/js/foundation.js,npm/foundation-sites@6.3.0"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.3.0/dist/js/foundation.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.3.0/dist/js/foundation.min.js"></script>
+<!--
+-->
+
+  </head>
+  <body>
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+          <h3 class="text-center">Navigation</h3>
+          <ul class="menu vertical" data-drilldown>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="has-submenu is-drilldown-submenu-parent"><a href="rooms.html">Rooms</a>
+              <ul class="menu vertical">
+                <li><a href="room-01.html">Room 01</a></li>
+                <li><a href="room-02.html">Room 02</a></li>
+                <li><a href="room-03.html">Room 03</a></li>
+                <li><a href="room-04.html">Room 04</a></li>
+                <li><a href="room-05.html">Room 05</a></li>
+                <li><a href="room-06.html">Room 06</a></li>
+              </ul>
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div><!-- END .off-canvas -->
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          <section class="promo-video">
+            <div id="overlay"></div>
+            <img src="assets/images/featured/about-us.jpg" />
+
+      <!-- to get the column row classes to work together, I had to make some tweaks to the app.scss file to take it back to Foundation v.6.3.something:
+        // Grids (choose one)
+      // @include foundation-xy-grid-classes;
+      @include foundation-grid;
+      @include foundation-flex-grid; -->
+
+            <div class="headliner">
+              <div class="column row">
+                <h1 class="text-center">About Us</h1>
+              </div>
+            </div><!-- END .headliner -->
+
+            <div class="header-content">
+              <div class="row">
+                <div class="small-8 medium-4 columns">
+                  <img src="assets/images/logo.svg" alt="Hotel Spa logo" />
+                </div>
+
+                <div class="small-4 medium-8 columns">
+                  <a class="menu-icon float-right" type="button" data-open="mainMenu"></a>
+                </div>
+              </div>
+            </div><!-- END .header-content -->
+          </section>
+          
+          <section class="content">
+            
+          </section>
+
+
+          <footer>
+            <div class="row">
+              <nav class="large-5 columns">
+                <ul class="vertical menu large-horizontal">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About US</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="rooms.html">Rooms</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+              </nav>
+              <div class="contact-information large-3 columns">
+                <ul class="no-bullet vertical">
+                  <li><i class="fi-marker"></i> <span>842 State Street East New Albany, IN 47150</span></li>
+                  <li><i class="fi-telephone"></i> <span>+1-202-555-0145</span></li>
+                  <li><i class="fi-mail"></i> <span>contact@hotel&spa.com</span></li>
+                </ul>
+              </div>
+              <div class="about-us large-4 columns">
+                <h4>About Us</h4>
+                <p>Love to play with owner's hair tie crash against wall but walk away like nothing happened. Fall over dead (not really but gets sypathy) i could pee on this if i had the energy, but eat all the power cords i am the best. </p>
+                <ul class="menu social align-right">
+                  <li>
+                    <a href="http://www.facebook.com">
+                      <i class="fi-social-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.twitter.com">
+                      <i class="fi-social-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-center copyright">All Rights reserved Hotel & Spa &#160;2015</p>
+          </footer>
+
+        </div><!-- END .off-canvas-content -->
+
+      </div><!-- END .off-canvas-wrapper-inner -->
+
+    </div><!-- END .off-campus-wrapper -->
+
+    
+    <!-- Foundation-specific components below -->
+
+    <!-- these have to be available for the off-canvas menu to display -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+
+    <script src="js/app.js">
+    </script>
+    
+
+
+<!--
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/what-input.min.js"></script>
+<script src="js/foundation.min.js"></script> 
+
+
+<script>
+    $(document).foundation();
+</script>
+-->
+
+  </body>
+</html>
