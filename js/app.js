@@ -31,5 +31,10 @@ $(function() {
 	});
 });
 
+$(window).resize(function() {
+	getHeight();
+});
+
+
 
 $(document).foundation();
