@@ -113,12 +113,82 @@ window.jQuery || document.write('<script src="bower_components/jquery/dist/jquer
               <h2 class="white text-center">Gallery</h2>
               <div class="medium-up-4">
                 <div class="column">
-
+                  <img src="assets/images/gallery/thumbnail/room01-02.jpg" class="thumbnail" alt="Room 1, photo 1" />
+                </div>
+                <div class="column">
+                  <img src="assets/images/gallery/thumbnail/room01-02.jpg" class="thumbnail" alt="Room 1, photo 2" />
+                </div>
+                <div class="column">
+                  <img src="assets/images/gallery/thumbnail/room01-03.jpg" class="thumbnail" alt="Room 1, photo 3" />
+                </div>
+                <div class="column">
+                  <img src="assets/images/gallery/thumbnail/room01-04.jpg" class="thumbnail" alt="Room 1, photo 4" />
                 </div>
               </div>
             </div>
           </section>
 
+
+          <!-- Separator image -->
+          <div class="separator-image pool-image"></div>
+
+
+           <!-- Booking section -->
+          <section class="booking row">
+            <div class="large-8 large-centered columns text-center">
+              <h2>Book Now</h2>
+              <p>Soft kitty warm kitty little ball of furr chew master's slippers present belly, scratch hand when stroked. Decide to want nothing to do with my owner today adventure always allways wanting food. Mewl for food at 4am my water bowl is clean and freshly replenished, so i'll drink from the toilet kitty loves pigs so lick the curtain just to be annoying. </p>
+              <a data-open="modalBook" class="button">Book Now</a>
+            </div>
+          </section>
+
+          <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+            <h2 class="text-center">Booking Form</h2>
+
+            <form data-abide novalidate>
+
+              <div class="alert callout" style="display:none;" data-abide-error>
+                <p><i class="fi-alert"></i> &#160;There are some problems in your form.</p>
+              </div>
+
+              <div class="row columns">
+                <label>Name:
+                  <input type="text" placeholder="Your Name" required />
+                  <span class="form-error">
+                    <i class="fi-alert"></i> The name field is mandatory!
+                  </span>
+                </label>
+              </div>
+              <div class="row columns">
+                <label>E-Mail:
+                  <input type="text" placeholder="Your E-mail" required pattern="email" />
+                  <span class="form-error">
+                    <i class="fi-alert"></i> The e-mail field is mandatory!
+                  </span>
+                </label>
+              </div>
+              <div class="row columns">
+                <label>Phone Number:
+                  <input type="text" placeholder="Your Phone Number" required pattern="number" />
+                  <span class="form-error">
+                    <i class="fi-alert"></i> The phone field is mandatory!
+                  </span>
+                </label>
+              </div>
+              <div class="row columns">
+                <label>Message:
+                  <textarea placeholder="Your Message"></textarea>
+                </label>
+              </div>
+              <div class="row columns">
+                  <input type="submit" class="button" value="submit" /> 
+                  <button class="button success" type="reset" value="Reset">Reset</button> 
+              </div>
+              <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </form>
+          </div>
 
           <footer>
             <div class="row">
