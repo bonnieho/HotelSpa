@@ -246,9 +246,6 @@ section.services .content-text{
 	display:flex;
 	justify-content:center;
 	flex-direction:column;
-	@include breakpoint(medium) {
-		height: 350px;
-	}
 }
 
 
