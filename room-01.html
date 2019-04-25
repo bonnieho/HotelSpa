@@ -98,7 +98,22 @@ window.jQuery || document.write('<script src="bower_components/jquery/dist/jquer
           </div>
           
           <section class="content">
-            <section class="room-info">
+            <div class="row">
+              <div class="large-6 columns large-centered">
+                <nav class="roomMenu">
+                 <ul class="menu horizontal expanded" data-magellan>
+                   <li><a href="#room-info">Information</a></li>
+                   <li><a href="#gallery">Gallery</a></li>
+                   <li><a href="#booking">Book Now</a></li>
+                  </ul>
+              </nav>
+              </div>
+
+
+            </div>
+
+
+            <section id="room-info" data-magellan-target="room-info" class="room-info">
               <div class="row">
                 <div class="large-10 columns large-centered">
                   <p class="text-center">Hit you unexpectedly hiss and stare at nothing then run suddenly away caticus cuteicus playing with balls of wool for freak human out make funny noise mow mow mow mow mow mow success now attack human. Headbutt owner's knee i am the best spill litter box, scratch at owner, destroy all furniture, especially couch but hide at bottom of staircase to trip human. Dead stare with ears cocked attack dog, run away and pretend to be victim furrier and even more furrier hairball. Has closed eyes but still sees you disappear for four days and return home with an expensive injury; bite the vet that box?</p>
@@ -108,12 +123,12 @@ window.jQuery || document.write('<script src="bower_components/jquery/dist/jquer
             </section>
           </section>
 
-          <section class="gallery bluebg">
+          <section id="gallery" data-magellan-target="gallery" class="gallery bluebg">
             <div class="row">
               <h2 class="white text-center">Gallery</h2>
               <div class="medium-up-4">
                 <div class="column">
-                  <img src="assets/images/gallery/thumbnail/room01-02.jpg" class="thumbnail" alt="Room 1, photo 1" />
+                  <img src="assets/images/gallery/thumbnail/room01-01.jpg" class="thumbnail" alt="Room 1, photo 1" />
                 </div>
                 <div class="column">
                   <img src="assets/images/gallery/thumbnail/room01-02.jpg" class="thumbnail" alt="Room 1, photo 2" />
@@ -134,7 +149,7 @@ window.jQuery || document.write('<script src="bower_components/jquery/dist/jquer
 
 
            <!-- Booking section -->
-          <section class="booking row">
+          <section id="booking" data-magellan-target="booking" class="booking row">
             <div class="large-8 large-centered columns text-center">
               <h2>Book Now</h2>
               <p>Soft kitty warm kitty little ball of furr chew master's slippers present belly, scratch hand when stroked. Decide to want nothing to do with my owner today adventure always allways wanting food. Mewl for food at 4am my water bowl is clean and freshly replenished, so i'll drink from the toilet kitty loves pigs so lick the curtain just to be annoying. </p>
