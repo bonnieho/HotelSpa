@@ -20,7 +20,7 @@ window.$ = jQuery */
 
 
 $(function() {
-	getHeight();
+	window.setTimeout('getHeight()',100);
 
 	$('gallery a').on('click',function() {
 		var image = $(this).find('img').attr('src');
